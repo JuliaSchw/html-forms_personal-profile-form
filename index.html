@@ -16,19 +16,29 @@
       <fieldset>
         <legend aria-label="Personal Information">Personal Information</legend>
         <!-- "for" and "id" are needed, so the field turns blue, if you click the label. -->
-        <label name="first-name" for="first-name">First Name:</label>
+        <label name="first-name" for="first-name" aria-describedby="first-name"
+          >First Name:</label
+        >
         <input name="first-name" id="first-name" />
-        <label name="last-name" for="last-name">Last Name:</label>
+        <label name="last-name" for="last-name" aria-describedby="last-name"
+          >Last Name:</label
+        >
         <input name="last-name" id="last-name" />
-        <label name="Birthday" for="Birthday">Your Birthday:</label>
+        <label name="Birthday" for="Birthday" aria-describedby="Birthday"
+          >Your Birthday:</label
+        >
         <input name="Birthday" id="Birthday" type="date" />
       </fieldset>
       <p>Can you tell us a little bit more?</p>
       <fieldset>
         <legend aria-label="Further Information">Further information</legend>
-        <label name="fav-color" for="fav-color">Your favourite Color:</label>
+        <label name="fav-color" for="fav-color" aria-describedby="fav-color"
+          >Your favourite Color:</label
+        >
         <input name="fav-color" id="fav-color" type="color" />
-        <label name="fav-pet" for="fav-pet">Your favourite Pet:</label>
+        <label name="fav-pet" for="fav-pet" aria-describedby="fav-pet"
+          >Your favourite Pet:</label
+        >
         <select name="fav-pet" id="fav-pet">
           <option value="">--Please choose an option--</option>
           <option value="dog">Dog</option>
