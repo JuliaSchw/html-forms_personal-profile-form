@@ -10,6 +10,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <h1>Your Personal Profile</h1>
+    <form>
+      <p>We want to get to know you! Please enter your personal information.</p>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- "for" and "id" are needed, so the field turns blue, if you click the label. -->
+        <label name="first-name" for="first-name">First Name:</label>
+        <input name="first-name" id="first-name" />
+        <label name="last-name" for="last-name">Last Name:</label>
+        <input name="last-name" id="last-name" />
+        <label name="Birthday" for="Birthday">Your Birthday:</label>
+        <input name="Birthday" id="Birthday" type="date" />
+      </fieldset>
+      <p>Can you tell us a little bit more?</p>
+      <fieldset>
+        <legend>Further information</legend>
+        <label name="fav-color" for="fav-color">Your favourite Color:</label>
+        <input name="fav-color" id="fav-color" type="color" />
+        <label name="fav-pet" for="fav-pet">Your favourite Pet:</label>
+        <select name="fav-pet" id="fav-pet">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+      </fieldset>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
